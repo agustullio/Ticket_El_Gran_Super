@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <base target="_top">
+        <meta charset="utf8">
+        <title>Programa de Generacion de Tickest</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <div class="ribbon">
+            <img src="logo.png" alt="logo" id='logo'>
+            <div class='center'>
+                <h1>Generador de Tickets</h1>
+                <form>
+                    <label for='printIP'>Ingrese la IP de la Impresora</label>
+                    <input type="text" id="printIP" name="printIP" value="192.168.3.190"><br><br>
+                    <label for='InField' >Ingresar los elementos a Imprimir</label><br><br>
+                    <input type="text" class='ImputBox' id="InField" name="InField" value=''>
+                    <button id='clearbt'>Borrar</button><br><br>
+                        
+                </form>
+                <div id = 'central'>
+                    
+                        <span class = 'sheets'> 
+                           <a id='a1' href='https://docs.google.com/spreadsheets/d/1x2Colw1iQ0B09SqDKBDUeCeLK5i_x-i4lrvnu23fjy8/edit#gid=0'>Spreadsheets Generacion diaria</a> 
+                        </span>
+                  
+                        <span class = 'sheets'>
+                            <div id='div1'>
+                                <a id='a2' href='https://docs.google.com/spreadsheets/u/0/'> Spreadsheets</a>
+                            </div>
+                        </span>
+                    
+                </div>
+                
+                <br><br>
+                <button id='btnIn'>Imprmir Tickets!</button><br><br>
+            
+                <button style='align-content: center'; id='test'>Prueba de Impresion</button>
+            </div>
+        </div> 
+    </body>
+    
+    <script src = print.js></script>
+</html>
